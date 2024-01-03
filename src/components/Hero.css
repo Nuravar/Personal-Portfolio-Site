@@ -1,14 +1,12 @@
-.change-topic {
-    transition: opacity 0.5s ease-in-out; /* Adjust the duration and easing as needed */
-  }
-  
-  .change-topic.out {
-    opacity: 0;
-  }
-  
-  @media (max-width: 600px) {
-    /* Adjust the height for smaller screens */
-    .your-image-class {
-      height: auto; /* or set a different height value */
-    }
-  }
+.card-content {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.059) 8%, 
+    transparent 8%
+  );
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+
+
+
+
+}

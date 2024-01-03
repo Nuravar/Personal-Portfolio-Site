@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Flex, Link, VStack, Box, Heading, Spacer, Text, HStack, Button, Divider, Tag, TagLeftIcon, TagLabel, Card, CardHeader, CardBody, CardFooter, Tab, useBreakpointValue } from '@chakra-ui/react';
 import { MdOutlineArrowOutward, MdOutlineArrowCircleUp } from "react-icons/md";
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, Facode, FaHeart, FaReact } from 'react-icons/fa';
+import { PiSmileyBold } from "react-icons/pi";
+import { PiArrowSquareUpRight } from "react-icons/pi";
 
 /* change the following to customize the page*/
 const emaiLink = "mailto:kothandv@mcmaster.ca"
@@ -35,10 +37,12 @@ const Contact = () => {
   {shouldRenderSecondHeading ? (
     <div>
         <Flex width="100%" justify='center' align='left'>
-            <Heading color='black' fontSize={100} id="contact">
+          
+            <Heading color='#1A202C' fontSize={100} id="contact" fontFamily="Clashgrotesk, sans-serif;">
                 Get In Touch
                 <Box display="inline-block" ml="2" verticalAlign="middle">
-                <MdOutlineArrowOutward size={90} color='black' />
+                <MdOutlineArrowOutward size={100} color='#1A202C' /> 
+                
                 </Box>
             </Heading>
         </Flex>
@@ -46,10 +50,10 @@ const Contact = () => {
   ) : (
     <div>
         <Flex width="100%" justify='center' align='center'>
-            <Heading color='black' fontSize={70} id="contact">
+            <Heading color='#1A202C ' fontSize={70} id="contact" fontFamily="Clashgrotesk, sans-serif;" >
                 Get In Touch
                 <Box display="inline-block" ml="2" verticalAlign="middle">
-                <MdOutlineArrowOutward size={50} color='black' />
+                <MdOutlineArrowOutward size={50} color='#1A202C' />
                 </Box>
             </Heading>
         </Flex>

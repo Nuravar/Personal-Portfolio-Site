@@ -13,6 +13,8 @@ import {
   Link
 } from '@chakra-ui/react';
 import "./IslandNavbar.css"
+import { TbSquareAsteriskFilled, TbSquareAsterisk} from "react-icons/tb";
+
 const IslandNavbar = () => {
 
     const mobileNav = useBreakpointValue({ base: true, md: false });
@@ -33,15 +35,16 @@ const IslandNavbar = () => {
         variant="link"
         onClick={scrollToTop}
         >
-            ṇ
+            <TbSquareAsteriskFilled style={{ fontSize: '25px' }} />
         </Box>
         <div>
             <Link href = "https://www.facebook.com/marketplace/item/708959441330993/?ref=browse_tab&referral_code=marketplace_top_picks&referral_story_type=top_picks" isExternal>
-                <Button variant="link" >Resume</Button>
+                <Button textColor="#1A202C" variant="link" >Resume</Button>
             </Link>
             <Button
                 variant="link"
                 pl="4"
+                textColor="#1A202C"
                 onClick={() => {
                 const experienceSection = document.getElementById('experience');
 
@@ -58,6 +61,7 @@ const IslandNavbar = () => {
             <Button
                 variant="link"
                 pl="4"
+                textColor="#1A202C"
                 onClick={() => {
                 const experienceSection = document.getElementById('projects');
 
@@ -74,6 +78,7 @@ const IslandNavbar = () => {
           <Button
             variant="link"
             pl="4"
+            textColor="#1A202C"
             display={{ base: "none", sm: "block" }}
             onClick={() => {
               const experienceSection = document.getElementById('contact');

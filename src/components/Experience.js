@@ -87,14 +87,14 @@ export default class Experiences extends Component {
 
     return (
       <>
-      <Heading width="100%" paddingX={10} paddingTop={10} id="experience">
+      <Heading width="100%" paddingX={10} paddingTop={10} id="experience" fontFamily="Clashgrotesk, sans-serif;">
         Experience        
       </Heading>
       <Box paddingX={10} width="100%" align="left">
-      <Text pb="3"width={{base:"100%", lg: "50%"}}>
+      <Text pb="3" pl="3" width={{base:"100%", lg: "50%"}}>
         My journey in engineering has been shaped by a diverse range of experiences, each contributing to my growth. Below you can find a link with my resume attached:
       </Text>
-      <Link href = "https://www.facebook.com/marketplace/item/708959441330993/?ref=browse_tab&referral_code=marketplace_top_picks&referral_story_type=top_picks" isExternal>
+      <Link pl="3" href = "https://www.facebook.com/marketplace/item/708959441330993/?ref=browse_tab&referral_code=marketplace_top_picks&referral_story_type=top_picks" isExternal>
       <Button paddingY="3" colorScheme="red" variant="outline" leftIcon={<IoDocumentAttach/>}>
         Resume
       </Button>
@@ -116,7 +116,7 @@ export default class Experiences extends Component {
                           <TagLabel>Now</TagLabel>
                       </Tag>
                       <CardHeader> 
-                        <Heading paddingBottom={2}>{experienceList.jobTitle}</Heading>
+                        <Heading paddingBottom={2} fontFamily="Clashgrotesk, sans-serif;" >{experienceList.jobTitle}</Heading>
                         <Text>{experienceList.companyName}</Text>
                         <Text color="gray">{experienceList.companyDepartment}</Text>
                       </CardHeader>

@@ -75,10 +75,10 @@ const RepoInfo = ({ repoName }) => {
   return (
     <div style={{ width: '100%' }}>
       <motion.div
-            initial={{ scale: 0.95 }}
+            initial={{ scale: 0.97 }}
             whileHover="hover"
             transition={{
-              duration: 1,
+              duration: 0.35,
               ease: "backInOut",
             }}
             variants={{
@@ -91,7 +91,7 @@ const RepoInfo = ({ repoName }) => {
       <div style={{ width: '100%' }}>
         <Flex style={{ width: '100%' }}>
           <Box style={{ width: '100%' }}>
-            <Card style={{ width: '100%', minHeight: '178px' }} p="2">
+            <Card style={{ width: '100%', minHeight: '178px' }} p="2" >
               <Flex flexDirection={{ base: 'column', md: 'row' }}>
                     <Link href={repoData.repoLink} isExternal pb="1" pr="2" pt="1.5">
                         <Button leftIcon={<FaGithub />} bgColor='#333' textColor='white' variant='outline'

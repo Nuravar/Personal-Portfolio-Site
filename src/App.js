@@ -8,7 +8,7 @@ import Skills from "./components/skill-carousel";
 import IslandNavbar from "./components/IslandNavbar";
 function App() {
   return (
-	<Box width={{ base: "auto"}} backgroundColor="white">
+	<Box  width={{ base: "auto"}} backgroundColor="whitesmoke">
 		  <VStack spacing={4} p={0} maxW="100%" align="center">
       <IslandNavbar  />
       <Hero />
@@ -19,5 +19,6 @@ function App() {
 	</Box>
   );
 }
+
 
 export default App;

@@ -4,53 +4,76 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Flex, Stack, VStack, Grid, GridItem, Box, Heading, Text, HStack, useBreakpointValue, Button, Divider, Tag, TagLeftIcon, TagLabel, Card, CardHeader, CardBody, CardFooter, Image, LinkBox, LinkOverlay, SlideFade  } from '@chakra-ui/react';
 import './Projects.css';
-import SlideEx1 from './Projects/Project1';
-import SlideEx2 from './Projects/Project2';
-import SlideEx3 from './Projects/Project3';
+import SlideEx1 from './Projects/1_slacker';
+import SlideEx2 from './Projects/2_paceplus';
+import SlideEx3 from './Projects/3_heatsink';
+import SlideEx4 from './Projects/4_hipimplant';
+import SlideEx5 from './Projects/5_easyclick';
+import SlideEx6 from './Projects/6_ostagami';
+import SlideEx7 from './Projects/7_pressurevest';
+import SlideEx8 from './Projects/8_unitygame';
 import { MdOutlineArrowBackIosNew, MdArrowForwardIos, MdCircle } from "react-icons/md";
 import { motion } from "framer-motion";
 
 
 
-const project1_image= "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=2011&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-const project2_image= "https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-const project3_image= "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const project1_image= "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Faef57990-2eec-4dbc-93ca-1d0ebf799a2e%2F4a4941b8-4cf8-442d-9275-08ffdf278b2a%2FScreenshot_2023-09-27_213006.jpg?table=block&id=deff3ebd-d792-4f6e-80de-8caaf0ce9bb4&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&width=2000&userId=356f44a9-6602-45d9-8f96-d0771f73cca3&cache=v2"
+const project2_image= "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F47691c16-171b-4114-8b2e-745938bb0c36%2FGroup_15.png?table=block&id=3b803b71-1b69-449b-930c-f3b36c09855a&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&width=2000&userId=356f44a9-6602-45d9-8f96-d0771f73cca3&cache=v2"
+const project3_image= "https://github.com/PacePlusPlus/PacePlusPlus/raw/main/Images/K64F-Board.jpg"
+const project4_image= "https://i.imgur.com/KS5Dc2W.png"
+const project5_image= "https://i.imgur.com/FhWsw41.png"
+const project6_image= "https://i.imgur.com/XeGHEU0.png"
+const project7_image= "https://i.imgur.com/RpJzjGy.png"
+const project8_image= "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb27145b5-9ba3-4f9b-bf03-eaf24e01d4b8%2Feterniusprime.png?table=block&id=de3463b7-b454-4ace-95a7-afc72b9d35e5&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&width=2000&userId=356f44a9-6602-45d9-8f96-d0771f73cca3&cache=v2"
 const projects = [
-  {
-    name: 'Heatsink Project',
-    image: project1_image,
-    description: 'Caffè latte is a coffee beverage of Italian origin made with espresso and steamed milk.',
-    tags: ['Python', 'Python', 'Python'],
-  },
+  
   {
     name: 'Slacker Chores',
     image: project2_image,
-    description: 'Caffè latte is a coffee beverage of Italian origin made with espresso and steamed milk.',
-    tags: ['Python', 'Python', 'Python'],
+    description: 'Slacker, our winning hackathon app, tackles shared-housing chaos! It auto-assigns chores, streamlining routines and achieving work-life balance for busy students. ',
+    tags: [['Winner', "yellow"], ['Hackathon', "facebook"], ['Full Stack', "blue"]],
   },
   {
     name: 'Pace++',
     image: project3_image,
-    description: 'Caffè latte is a coffee beverage of Italian origin made with espresso and steamed milk.',
-    tags: ['Python', 'Python', 'Python'],
+    description: 'With code-generated visuals and a secure interface, Pace++ puts the complex world of pacemakers in your hands. Explore 7 modes, visualize heartbeats, and explore how our pacemaker keeps hearts ticking.',
+    tags: [['Python', "pink"], ['Simulink', "purple"], ['Embedded', "cyan"]],
   },
   {
-    name: 'Pace++',
-    image: project3_image,
-    description: 'Caffè latte is a coffee beverage of Italian origin made with espresso and steamed milk.',
-    tags: ['Python', 'Python', 'Python'],
+    name: 'Heatsink Project',
+    image: project1_image,
+    description: 'Tackled thermodynamics as a rookie engineers, crafting and testing dozens of heatsinks designs for optimal CPU cooling. We navigated design constraints of efficiency, cost, and feasibility to present innovative solutions.',
+    tags: [['CAD', "red"], ['Design', "orange"], ['Materials', "green"]],
   },
   {
-    name: 'Pace++',
-    image: project3_image,
-    description: 'Caffè latte is a coffee beverage of Italian origin made with espresso and steamed milk.',
-    tags: ['Python', 'Python', 'Python'],
+    name: 'Hip Implant',
+    image: project4_image,
+    description: 'Designed a custom hip implant (Companion) for athlete Djimon Hounsou to combat debilitating hip dysplasia, ensuring a pain-free, active future.',
+    tags: [['CAD', "red"], ['Design', "orange"], ['Biomedical', "blue"]],
   },
   {
-    name: 'Pace++',
-    image: project3_image,
-    description: 'Caffè latte is a coffee beverage of Italian origin made with espresso and steamed milk.',
-    tags: ['Python', 'Python', 'Python'],
+    name: 'Easy Click',
+    image: project5_image,
+    description: 'EasyClick earpiece uses head movements to control the mouse, empowering individuals with limited fine motor skills to navigate their online world with ease.',
+    tags: [['Python', "pink"], ['Design', "orange"], ['Biomedical', "blue"]],
+  },
+  {
+    name: 'Ostagami',
+    image: project6_image,
+    description: "Ostogami's modular, foldable design expands nighttime ostomy bag capacity for restful sleep, while its sleek daytime connector maintains a discreet profile.",
+    tags: [['CAD', "red"], ['Design', "orange"], ['Biomedical', "blue"]],
+  },
+  {
+    name: 'Pressure Sensitive Vest',
+    image: project7_image,
+    description: "SV's weighted vest & smart insoles improve gait & balance for stroke survivors like Kevin, granting greater independence & a brighter future.",
+    tags: [['Python', "pink"], ['Design', "orange"], ['Biomedical', "blue"]],
+  },
+  {
+    name: 'Unity Game',
+    image: project8_image,
+    description: 'Conquering pixelated foes and mastering class-based loot in 2 months, our metroidvania prototype offers four vibrant levels and a climactic boss fight.',
+    tags: [['', "white"], ['C#', "blue"], ['Unity', "gray"]],
   },
 ];
 
@@ -67,7 +90,7 @@ const ExtendedProjects = () => {
         slidesToShow: 1,
         speed: 500,
         draggable: false,
-        rows: 3,
+        rows: 6,
         slidesPerRow: 1,
         nextArrow: <MdArrowForwardIos color="black"/>,
       prevArrow: <MdOutlineArrowBackIosNew color = "black"/>,
@@ -94,10 +117,10 @@ const ExtendedProjects = () => {
         <Slider {...sliderSettings}>
           {projects.map((project, index) => (
             <motion.div
-            initial={{ scale: 0.95 }}
+            initial={{ scale: 0.99 }}
             whileHover="hover"
             transition={{
-              duration: 1,
+              duration: 0.35,
               ease: "backInOut",
             }}
             variants={{
@@ -113,48 +136,52 @@ const ExtendedProjects = () => {
                 onClick={(event) => handleButtonClick(event, project)}
                 variant="unstyled"
               >
-              <Card
-                height={{ base: '100%', sm: '200px' }}
-                width="100%"
-                direction={{ base: 'column', sm: 'row' }}
-                overflow="hidden"
-                variant="outline"
-                maxW={{ base: '100%', sm: '100%' }}
-              >
-                <Image
-                  objectFit="cover"
-                  width={{ base: '100%', md: '80%' }}
-                  minWidth="40%"
-                  height="250px"
-                  src={project.image}
-                  alt="Project Card"
-                />
-                <Stack width="auto">
-                  <CardBody  width="auto">
-                      <Heading>{project.name}</Heading>
-                        <Box  whiteSpace="normal">
-                        <Text   maxWidth="100%" py="2">{project.description}</Text>
-                        </Box>           
-                    <Flex justifyContent="flex-end">
-                    {project.tags.map((tag, tagIndex) => (
-                      <Tag
-                        key={tagIndex}
-                        bottom="20px"
-                        right={`${175 - tagIndex * 75}px`}
-                        variant="subtle"
-                        colorScheme="gray"
-                        mr="2" 
-                        mt={{ base: "2", sm: '8' }}
+                <Card
+                  width="100%"
+                  direction={{ base: 'column', sm: 'row' }}
+                  overflow="hidden"
+                  variant="outline"
+                >
+                  <Box flex={{ base: 'none', md: '0 0 80%' }} maxWidth={{ base: '100%', md: '60%' }}>
+                    <Image
+                      objectFit="cover"
+                      width="100%"
+                      height="200px"
+                      src={project.image}
+                      alt="Project Card"
+                    />
+                  </Box>
+                  <Stack flex="1">
+                    <CardBody>
+                      <Heading textAlign="left">{project.name}</Heading>
+                      <Box whiteSpace="normal" textAlign="left">
+                        <Text maxWidth="100%" py="2">
+                          {project.description}
+                        </Text>
+                      </Box>
+                      <Flex
+                        justifyContent="flex-end"
+                        position="absolute"
+                        bottom="5px"
+                        right="5px" 
                       >
-                        <TagLabel>{tag}</TagLabel>
-                      </Tag>
-                    ))}
-                    </Flex>
-                  </CardBody>
-                </Stack>
-              </Card>
-              
-            </Box>
+                        {project.tags.map((tag, tagIndex) => (
+                          <Tag
+                            key={tagIndex}
+                            variant="subtle"
+                            colorScheme={tag[1]}
+                            mr="2"
+                            mt="2"
+                          >
+                            <TagLabel>{tag[0]}</TagLabel>
+                          </Tag>
+                        ))}
+                      </Flex>
+                    </CardBody>
+                  </Stack>
+                </Card>
+              </Box>
+
             </motion.div>
           ))}
   
@@ -162,22 +189,57 @@ const ExtendedProjects = () => {
         </Slider>
         {isSlideExVisible && selectedProject && (
                 <>
-                    {selectedProject.name === 'Heatsink Project' && (
+                    {selectedProject.name === 'Slacker Chores' && (
                     <SlideEx1
                         isOpen={isSlideExVisible}
                         project={selectedProject}
                         onClose={handleCloseSlideEx}
                     />
                     )}
-                    {selectedProject.name === 'Slacker Chores' && (
+                    {selectedProject.name === 'Pace++' && (
                     <SlideEx2
                         isOpen={isSlideExVisible}
                         project={selectedProject}
                         onClose={handleCloseSlideEx}
                     />
                     )}
-                    {selectedProject.name === 'Pace++' && (
+                    {selectedProject.name === 'Heatsink Project' && (
                     <SlideEx3
+                        isOpen={isSlideExVisible}
+                        project={selectedProject}
+                        onClose={handleCloseSlideEx}
+                    />
+                    )}
+                    {selectedProject.name === 'Hip Implant' && (
+                    <SlideEx4
+                        isOpen={isSlideExVisible}
+                        project={selectedProject}
+                        onClose={handleCloseSlideEx}
+                    />
+                    )}
+                    {selectedProject.name === 'Easy Click' && (
+                    <SlideEx5
+                        isOpen={isSlideExVisible}
+                        project={selectedProject}
+                        onClose={handleCloseSlideEx}
+                    />
+                    )}
+                    {selectedProject.name === 'Ostagami' && (
+                    <SlideEx6
+                        isOpen={isSlideExVisible}
+                        project={selectedProject}
+                        onClose={handleCloseSlideEx}
+                    />
+                    )}
+                    {selectedProject.name === 'Pressure Sensitive Vest' && (
+                    <SlideEx7
+                        isOpen={isSlideExVisible}
+                        project={selectedProject}
+                        onClose={handleCloseSlideEx}
+                    />
+                    )}
+                    {selectedProject.name === 'Unity Game' && (
+                    <SlideEx8
                         isOpen={isSlideExVisible}
                         project={selectedProject}
                         onClose={handleCloseSlideEx}

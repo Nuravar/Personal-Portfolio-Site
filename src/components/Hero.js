@@ -16,13 +16,13 @@ const linkedin = "https://www.linkedin.com/in/varun-ram/"
 const github = "https://github.com/Nuravar"
 const description = (
   <>
-  <strong>👋Hi!,</strong> <br /><br />
+  <strong>👋Hi,</strong> <br /><br />
     I am junior studying Mechatronics and Biomedical Engineering at McMaster University, <Text as="strong">currently looking for an internship for the 2024 Winter/Summer terms.</Text> 
     {' '}Most recently, I have been working as a teaching assistant for{' '}
-    <Link href="https://www.eng.mcmaster.ca/ibiomed/" isExternal color="blue.500">
+    <Link href="https://www.eng.mcmaster.ca/ibiomed/" isExternal color="#008CC9">
       McMaster Engineering
     </Link>{' '}and contributing to the{' '}
-    <Link href="https://www.mcmastersolarcar.com/" isExternal color="blue.500">
+    <Link href="https://www.mcmastersolarcar.com/" isExternal color="#008CC9">
       McMaster Solar Car Project
     </Link>. <br /> <br /> In my free time, I enjoy playing the violin, graphic design, and playing football.
   </>
@@ -63,6 +63,7 @@ const doubleArray = [
 ];
 
 
+
 const Hero = () => {
   
 
@@ -87,7 +88,7 @@ const Hero = () => {
               </Box>
               <Box overflow="hidden" align="right">
                 <Text fontSize={{ base: "2vw", md: "2vw", lg: "2vw" }} fontFamily="Clashgrotesk, sans-serif;">
-                  Based in Hamilton, ON
+                  Based in Toronto, ON
                 </Text>
               </Box>
             </HStack>
@@ -169,15 +170,14 @@ const Hero = () => {
         </Flex>
     <Skills /> 
 
-    <Flex justify="flex-start" width="100%" paddingX="10" flexDirection={{ base: 'column', md: 'row' }}>
-      <VStack align="flex-start" spacing="3" flexWrap="wrap">
-
-        <Heading width="100%" paddingTop={10} id="experience">
+    <Flex justify="flex-start" width="100%" paddingX="6" flexDirection={{ base: 'column', md: 'row' }} >
+      <VStack className="card-content" align="flex-start" spacing="3" flexWrap="wrap" bgColor="#1A202C" borderRadius="20px">
+        <Heading width="100%" paddingX="4" paddingTop={10} id="experience" fontFamily="Clashgrotesk, sans-serif;" textColor="whitesmoke">
             About Me        
         </Heading>
         <Flex>
-        <Box paddingY ="1" width="100%">
-          <Text width={{base:"100%", lg: "50%"}}>
+        <Box paddingY ="1" paddingBottom="5" width="100%">
+          <Text paddingX="7" width={{base:"100%", lg: "50%"}} textColor="whitesmoke" >
             {description}
           </Text>
         </Box>

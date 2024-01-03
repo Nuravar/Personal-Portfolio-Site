@@ -11,7 +11,7 @@ import "./index.css"
 ReactDOM.render(
 	<React.StrictMode>
 		<ChakraProvider>
-			<ColorModeScript initialColorMode="dark"></ColorModeScript>
+			<ColorModeScript initialColorMode="light"></ColorModeScript>
 			<App />
 		</ChakraProvider>
 	</React.StrictMode>,
