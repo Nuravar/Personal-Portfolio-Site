@@ -7,6 +7,16 @@ import { SiChakraui } from "react-icons/si";
 import {MdOpenInNew} from "react-icons/md"
 import { IoLogoFirebase } from "react-icons/io5";
 
+import slacker_chores_depost from "../images/slacker/slacker_chores_depost.png"
+import mobile from "../images/slacker/slacker_chores_mobile_mockup.png"
+import light from "../images/slacker/slacker_chores_light.png"
+import dark from "../images/slacker/slacker_chores_dark.png"
+import auth from "../images/slacker/slacker_chores_auth.png"
+import login from "../images/slacker/slacker_chores_loggedin.png"
+import myTask from "../images/slacker/slacker_chores_myTaskpng.png"
+import group from "../images/slacker/slacker_chores_group.png"
+import settings from "../images/slacker/slacker_chores_settings.png"
+import logo from "../images/slacker/slacker_chores_logo.png"
 
 function SlideEx({ isOpen, onClose }) {
   const gridColumnCount = useBreakpointValue({ base: 10, sm: 10, md: 10, lg: 10, xl: 10 });
@@ -90,7 +100,7 @@ function SlideEx({ isOpen, onClose }) {
             </HStack>
             <Box pt="10" width={{base: "100%", sm: "80%"}}>
               <Box align="center">
-              <Image src="https://file.notion.so/f/f/aef57990-2eec-4dbc-93ca-1d0ebf799a2e/d4ef78c1-14de-495e-835b-826f1c74d99d/Untitled.png?id=53ac56bf-8cd9-40b9-851b-b5f18864e6e8&table=block&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&expirationTimestamp=1704261600000&signature=1JmDZZFJ4KGIGH4-mMGyxjhlAsRyi6-G194VmKq__qc&downloadName=Untitled.png" />
+              <Image src={slacker_chores_depost} />
               <Text color="gray">The winning banner over our devpost</Text>
               </Box>
             </Box>
@@ -130,23 +140,23 @@ function SlideEx({ isOpen, onClose }) {
           </Text>
           <Box pt="5" width={{base: "100%", sm: "80%"}}>
               <Box align="center">
-              <Image src="https://i.imgur.com/IReKvbh.png"/>
+              <Image src={mobile}/>
               <Text color="gray">The original mobile mockup in figma</Text>
               </Box>
             </Box>
           
 
           <Text textColor="#1A202C" pt="50px" width={{base: "100%", sm: "80%"}} > 
-          After creating the mobile mockup, we quicly realized that we did not have enough time to continue with a react native application. From the mobile design that I created, we pivoted to a standard react-app that switches between dark and light modes. This was the project that got me into graphic design and learning how to make pages look user-friendly, if I were to redo the page, I would definetly change up the layout and make it simpler to understand.</Text>
+          After creating the mobile mockup, we quickly realized that we did not have enough time to continue with a react native application. From the mobile design that I created, we pivoted to a standard react-app that switches between dark and light modes. This was the project that got me into graphic design and learning how to make pages look user-friendly, if I were to redo the page, I would definetly change up the layout and make it simpler to understand.</Text>
           <Box pt="5" width={{base: "100%", sm: "80%"}}>
               <Box align="center">
-              <Image width={{base: "100%", sm: "80%"}} src="https://file.notion.so/f/f/aef57990-2eec-4dbc-93ca-1d0ebf799a2e/71021491-531d-437e-9bdb-a389a586b53f/Untitled.png?id=e46f325b-b362-4be1-b301-6b20983c7add&table=block&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&expirationTimestamp=1704261600000&signature=nIX9e0GObQDAFZsHjZIukgaQ7TEzKB4AJenJx_dKfQw&downloadName=Untitled.png"/>
+              <Image width={{base: "100%", sm: "80%"}} src={light}/>
               <Text color="gray">The web application login-page in light mode</Text>
               </Box>
             </Box>
           <Box pt="5" width={{base: "100%", sm: "80%"}}>
             <Box align="center">
-            <Image width={{base: "100%", sm: "80%"}} src="https://file.notion.so/f/f/aef57990-2eec-4dbc-93ca-1d0ebf799a2e/92e6c474-d001-420e-91b5-c4a27a7a513b/Untitled.png?id=f2af8b57-8406-4771-a8b2-33634e45b2e9&table=block&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&expirationTimestamp=1704261600000&signature=3n-SufLpC_CpE7999r6KS5RdwcYgZITMavY5KjBRfmY&downloadName=Untitled.png"/>
+            <Image width={{base: "100%", sm: "80%"}} src={dark}/>
             <Text color="gray">The web application login-page in dark mode</Text>
             </Box>
           </Box>
@@ -156,9 +166,9 @@ function SlideEx({ isOpen, onClose }) {
           </Text>
           <Box pt="5" width={{base: "100%", sm: "80%"}}>
             <Box align="center">
-            <Image width={{base: "100%", sm: "80%"}} src="https://file.notion.so/f/f/aef57990-2eec-4dbc-93ca-1d0ebf799a2e/e80b2f36-45b5-41a8-b809-68b8d8f54bb6/Untitled.png?id=122a2ff8-be7e-4466-a5c2-48aaceb0db4f&table=block&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&expirationTimestamp=1704261600000&signature=_jcetZgxInaIcFBcAqXpqLXFRcFiXSLjcqAgxliwMxg&downloadName=Untitled.png"/>
+            <Image width={{base: "100%", sm: "80%"}} src={auth}/>
             <Text color="gray">The user authentication workflow</Text>
-            <Image pt="5" width={{base: "100%", sm: "50%"}} src="https://i.imgur.com/yAOaD8H.png"/>
+            <Image pt="5" width={{base: "100%", sm: "50%"}} src={login}/>
             <Text color="gray">Signed in user display</Text>
 
             </Box>
@@ -168,7 +178,7 @@ function SlideEx({ isOpen, onClose }) {
           In our app, "My Tasks" becomes your personal hub for seamless teamwork. Tasks flow seamlessly from group sections, getting randomly assigned to ensure a fair workload distribution for everyone.          </Text>
           <Box pt="5" width={{base: "100%", sm: "80%"}}>
             <Box align="center">
-            <Image width={{base: "100%", sm: "80%"}} src="https://file.notion.so/f/f/aef57990-2eec-4dbc-93ca-1d0ebf799a2e/7dd23320-2bcf-4950-90db-e1f51cd1d5a1/Untitled.png?id=1eca7f2b-14bd-4980-94c2-8f7a998703bf&table=block&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&expirationTimestamp=1704261600000&signature=PnwksBXi5wARAH1VYLkQsOtbBImksDgixzUodFcutB8&downloadName=Untitled.png"/>
+            <Image width={{base: "100%", sm: "80%"}} src={myTask}/>
             </Box>
           </Box>
 
@@ -179,9 +189,9 @@ function SlideEx({ isOpen, onClose }) {
           </Text>
           <Box pt="5" width={{base: "100%", sm: "80%"}}>
             <Box align="center">
-            <Image width={{base: "100%", sm: "80%"}} src="https://file.notion.so/f/f/aef57990-2eec-4dbc-93ca-1d0ebf799a2e/cb00fd84-2aa9-4102-9566-ad80306c3219/Untitled.png?id=6541c255-2fb6-41eb-ae08-bc196568d10a&table=block&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&expirationTimestamp=1704261600000&signature=UzUEgTF8x10-smzKkKkjLC73ANtUNVTwegpghbOwfZI&downloadName=Untitled.png"/>
+            <Image width={{base: "100%", sm: "80%"}} src={group}/>
             <Text color="gray">The group tasks page</Text>
-            <Image pt="5" width={{base: "100%", sm: "80%"}} src="https://file.notion.so/f/f/aef57990-2eec-4dbc-93ca-1d0ebf799a2e/bc14347c-70a5-42f0-8130-c07badd4ef46/Untitled.png?id=3ed8c062-d7cc-46d3-8ef5-a303c785db35&table=block&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&expirationTimestamp=1704261600000&signature=yoa4GWVmwXv2BljqkN8eIoLM3d7pMOYpv0xtrGbkUHE&downloadName=Untitled.png"/>
+            <Image pt="5" width={{base: "100%", sm: "80%"}} src={settings}/>
             <Text color="gray">The settings page</Text> 
             </Box>
           </Box>
@@ -192,7 +202,7 @@ function SlideEx({ isOpen, onClose }) {
           </Text>
           <Box pt="5" width={{base: "100%", sm: "80%"}}>
             <Box align="center">
-            <Image width={{base: "100%", sm: "50%"}} src="https://file.notion.so/f/f/aef57990-2eec-4dbc-93ca-1d0ebf799a2e/36b4a1be-ee8f-4167-9d5a-d4e35e50d9e3/Untitled.png?id=0bf1f213-24d8-4a64-990f-27636d1b4477&table=block&spaceId=aef57990-2eec-4dbc-93ca-1d0ebf799a2e&expirationTimestamp=1704261600000&signature=39akWj7YLiVbDLrdUOkKI_5dznaO6WlcSYm8Go7tNFI&downloadName=Untitled.png"/>
+            <Image width={{base: "100%", sm: "50%"}} src={logo}/>
             <Text color="gray">The logo mockups</Text>   
             </Box>
           </Box>
